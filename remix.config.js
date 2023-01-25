@@ -1,4 +1,7 @@
 /** @type {import('@remix-run/dev').AppConfig} */
+
+require("dotenv").config({ path: ".env.production" });
+
 module.exports = {
   appDirectory: "app",
   assetsBuildDirectory: "public/build",
