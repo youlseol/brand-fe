@@ -2,6 +2,7 @@ import type { ActionArgs, LoaderArgs } from "@remix-run/node";
 import { json, redirect } from "@remix-run/node";
 import { Form, useCatch, useLoaderData } from "@remix-run/react";
 // import { Link } from "@remix-run/react";
+import { useEffect } from "react";
 
 export async function loader({ request, params }: LoaderArgs) {
   console.log('loader' , params);
@@ -15,7 +16,6 @@ export async function action({ request, params }: ActionArgs) {
 
 export default function NoteDetailsPage() {
   const data = useLoaderData<typeof loader>();
-
   return (
     <div>
       <h3 className="text-2xl font-bold">Magazine {data.magazineId}</h3>
