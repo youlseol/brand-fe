@@ -20,12 +20,17 @@ export default function App() {
       <head>
         <Meta />
         <Links />
+        <script type="text/javascript" src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-63f1aea55894601a"></script>
+
       </head>
-      <body>
+      <body> 
         <Outlet />
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
+        
+        <div className="addthis_inline_share_toolbox_1ru1"></div>
+            
       </body>
     </html>
   );
